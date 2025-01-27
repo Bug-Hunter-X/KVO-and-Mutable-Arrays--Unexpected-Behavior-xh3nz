@@ -1,0 +1,1 @@
+In Objective-C, a subtle error can occur when using KVO (Key-Value Observing) with mutable arrays. If you modify the array directly (e.g., using `addObject:` or `removeObject:`) while KVO is observing it, you may encounter unexpected behavior or crashes. This is because KVO notifications might not be triggered correctly, leading to inconsistencies in observed values.
